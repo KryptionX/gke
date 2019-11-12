@@ -1,3 +1,3 @@
 module "m" {
-  source = "github.com/kryptionx/gke/modules"
+  source = "github.com/kryptionx/gke"
 }

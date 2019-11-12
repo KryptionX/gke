@@ -1,7 +1,3 @@
-module "m" {
-  source = "./gke-cluster"
-}
-
 terraform {
   backend "remote" {
     hostname     = "legible-bee.hashicorp-success.com"

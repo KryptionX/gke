@@ -7,3 +7,9 @@ resource "null_resource" "GENIUS" {
 variable "outter" {
   type = string
 }
+
+module "inner" {
+  source = "./modules/test"
+
+  inner = "look-at-that"
+}

@@ -1,9 +1,9 @@
 resource "null_resource" "Child" {
   triggers = {
-    stuff = "${var.child}-${timestamp()}"
+    TIME = "${timestamp()}"
   }
 }
 
-variable "child" {
-  type = string
-}
+# variable "child" {
+#   type = string
+# }

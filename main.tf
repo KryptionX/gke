@@ -12,7 +12,7 @@ variable "child" {
   type = string
 }
 
-module "whatever" {
+module "CHILD" {
   source = "./modules/test"
 
   child = "${var.child}"

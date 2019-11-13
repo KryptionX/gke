@@ -8,8 +8,12 @@ variable "outter" {
   type = string
 }
 
+variable "inner" {
+  type = string
+}
+
 module "inner" {
   source = "./modules/test"
 
-  inner = "look-at-that"
+  inner = "${var.inner}"
 }

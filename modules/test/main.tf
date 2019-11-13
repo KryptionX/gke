@@ -1,9 +1,9 @@
-resource "null_resource" "GENIUS-INNER" {
+resource "null_resource" "Child" {
   triggers = {
-    stuff = "${var.inner}-${timestamp()}"
+    stuff = "${var.child}-${timestamp()}"
   }
 }
 
-variable "inner" {
+variable "child" {
   type = string
 }

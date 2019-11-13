@@ -1,19 +1,19 @@
-resource "null_resource" "GENIUS" {
+resource "null_resource" "MAIN" {
   triggers = {
-    stuff = "${var.outter}-${timestamp()}"
+    stuff = "${var.main}-${timestamp()}"
   }
 }
 
-variable "outter" {
+variable "main" {
   type = string
 }
 
-variable "inner" {
+variable "child" {
   type = string
 }
 
-module "inner" {
+module "whatever" {
   source = "./modules/test"
 
-  inner = "${var.inner}"
+  child = "${var.child}"
 }

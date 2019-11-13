@@ -3,7 +3,3 @@ resource "null_resource" "Child" {
     TIME = "${timestamp()}"
   }
 }
-
-# variable "child" {
-#   type = string
-# }
